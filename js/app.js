@@ -80,7 +80,7 @@ const handleCellClick = ({ target }) => {
 const handleRestartGame = () => {
     gameActive = true;
     currentPlayer = "X";
-    this.gameState = ["", "", "", "", "", "", "", "", ""];
+    gameState = ["", "", "", "", "", "", "", "", ""];
     statusDisplay.innerHTML = currentPlayerTurn();
     document.querySelectorAll('.cell').forEach(cell => cell.innerHTML = "");
 }
